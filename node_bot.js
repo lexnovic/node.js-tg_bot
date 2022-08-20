@@ -1,6 +1,7 @@
 const axios = require('axios');
+const { appendFile } = require('fs');
 const schedule = require('node-schedule');
-var bb = require('bot-brother');
+var bb = require('telegraf');
 var bot = bb({
   key: '<5487670851:AAFmujPmEDc6D9YvTySXUedHsbCkq3Ls1sc',
   sessionManager: bb.sessionManager.memory(),
@@ -26,8 +27,9 @@ async function getArticle() {
 
 function sendWikiarticle (articleUrl){
   // send wiki url to the chat
-    bot.api.sendMessage('-1001616695538', 'Веталь зайка');
-    bot.api.sendMessage('-1001616695538', articleUrl);
+  //  bot.api.sendMessage('-1001616695538', 'Веталь зайка');
+  //  bot.api.sendMessage('-1001616695538', articleUrl);
+  app.telegram.sendMessage('-1001616695538', articleUrl);
 };
 
 async function scheduleWiki(){
