@@ -1,0 +1,27 @@
+{
+  "name": "node.js-tg_bot",
+  "version": "1.0.0",
+  "description": "tg bot",
+  "main": "bot_with_webhooks.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lexnovic/node.js-tg_bot.git"
+  },
+  "keywords": [
+    "Kesha"
+  ],
+  "author": "Lexnovic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lexnovic/node.js-tg_bot/issues"
+  },
+  "homepage": "https://github.com/lexnovic/node.js-tg_bot#readme",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "node-schedule": "^2.1.0",
+    "telegraf": "^4.8.6"
+  }
+}
